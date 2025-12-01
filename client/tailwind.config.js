@@ -1,0 +1,152 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        "./index.html",
+        "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+        extend: {
+            colors: {
+                primary: {
+                    50: '#EEF2FF',
+                    100: '#E0E7FF',
+                    200: '#C7D2FE',
+                    300: '#A5B4FC',
+                    400: '#818CF8',
+                    500: '#6366F1',
+                    600: '#4F46E5',
+                    700: '#4338CA',
+                    800: '#3730A3',
+                    900: '#312E81',
+                    DEFAULT: '#6366F1',
+                    hover: '#4F46E5',
+                    light: '#EEF2FF',
+                },
+                secondary: {
+                    50: '#FDF4FF',
+                    100: '#FAE8FF',
+                    200: '#F5D0FE',
+                    300: '#F0ABFC',
+                    400: '#E879F9',
+                    500: '#D946EF',
+                    600: '#C026D3',
+                    700: '#A21CAF',
+                    800: '#86198F',
+                    900: '#701A75',
+                    DEFAULT: '#D946EF',
+                    hover: '#C026D3',
+                },
+                accent: {
+                    blue: '#3B82F6',
+                    green: '#10B981',
+                    orange: '#F97316',
+                    purple: '#8B5CF6',
+                    pink: '#EC4899',
+                    teal: '#14B8A6',
+                },
+                background: {
+                    DEFAULT: '#F8FAFC',
+                    dark: '#0F172A',
+                },
+                surface: {
+                    DEFAULT: '#FFFFFF',
+                    dark: '#1E293B',
+                    hover: '#F1F5F9',
+                },
+                text: {
+                    DEFAULT: '#0F172A',
+                    muted: '#64748B',
+                    light: '#94A3B8',
+                },
+                success: {
+                    DEFAULT: '#10B981',
+                    light: '#D1FAE5',
+                    dark: '#065F46',
+                },
+                warning: {
+                    DEFAULT: '#F59E0B',
+                    light: '#FEF3C7',
+                    dark: '#92400E',
+                },
+                error: {
+                    DEFAULT: '#EF4444',
+                    light: '#FEE2E2',
+                    dark: '#991B1B',
+                },
+                info: {
+                    DEFAULT: '#3B82F6',
+                    light: '#DBEAFE',
+                    dark: '#1E40AF',
+                },
+                border: {
+                    DEFAULT: '#E2E8F0',
+                    dark: '#334155',
+                },
+            },
+            fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                display: ['Lexend', 'Inter', 'sans-serif'],
+            },
+            fontSize: {
+                'xs': ['0.75rem', { lineHeight: '1rem' }],
+                'sm': ['0.875rem', { lineHeight: '1.25rem' }],
+                'base': ['1rem', { lineHeight: '1.5rem' }],
+                'lg': ['1.125rem', { lineHeight: '1.75rem' }],
+                'xl': ['1.25rem', { lineHeight: '1.75rem' }],
+                '2xl': ['1.5rem', { lineHeight: '2rem' }],
+                '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
+                '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
+            },
+            boxShadow: {
+                'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+                'DEFAULT': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+                'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                'lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                'xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+                '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+                'card': '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+                'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                'inner': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+            },
+            borderRadius: {
+                'sm': '0.375rem',
+                'DEFAULT': '0.5rem',
+                'md': '0.625rem',
+                'lg': '0.75rem',
+                'xl': '1rem',
+                '2xl': '1.5rem',
+            },
+            spacing: {
+                '18': '4.5rem',
+                '88': '22rem',
+                '128': '32rem',
+            },
+            animation: {
+                'fade-in': 'fadeIn 0.5s ease-in-out',
+                'slide-up': 'slideUp 0.4s ease-out',
+                'slide-down': 'slideDown 0.4s ease-out',
+                'scale-in': 'scaleIn 0.3s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' },
+                },
+                slideUp: {
+                    '0%': { transform: 'translateY(10px)', opacity: '0' },
+                    '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                    '0%': { transform: 'translateY(-10px)', opacity: '0' },
+                    '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                scaleIn: {
+                    '0%': { transform: 'scale(0.95)', opacity: '0' },
+                    '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+            },
+        },
+    },
+    plugins: [],
+}
