@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "2.0.0",
+  "description": "Academia Management System - Neo4j Version",
+  "main": "server.neo4j.js",
+  "scripts": {
+    "start": "node server.neo4j.js",
+    "dev": "nodemon server.neo4j.js",
+    "migrate": "node scripts/migrateToNeo4j.js",
+    "test": "jest --watchAll"
+  },
+  "keywords": ["neo4j", "express", "academia"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
+    "neo4j-driver": "^5.15.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}

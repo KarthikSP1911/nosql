@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import API from '../services/api';
-import { GraduationCap, Users, BookOpen, ArrowRight, TrendingUp, Calendar, Award, Activity } from 'lucide-react';
+import { GraduationCap, Users, BookOpen, ArrowRight, Calendar, Award, Activity } from 'lucide-react';
 import StatsCard from '../components/ui/StatsCard';
 import PageContainer from '../components/ui/PageContainer';
 import Card from '../components/ui/Card';
@@ -172,7 +172,7 @@ const Dashboard = () => {
                         </Card>
                     </div>
 
-                    {/* Course Overview & Upgrade Card */}
+                    {/* Course Overview */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {/* Course Overview */}
                         <Card className="p-6 lg:col-span-3">

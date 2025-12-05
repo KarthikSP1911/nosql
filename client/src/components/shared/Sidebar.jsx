@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, GraduationCap, Users, BookOpen, Settings, HelpCircle, LogOut, Sparkles } from 'lucide-react';
+import { LayoutDashboard, GraduationCap, Users, BookOpen, Settings, HelpCircle, LogOut } from 'lucide-react';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
 
